@@ -1,0 +1,42 @@
+{
+  "name": "redux-without-profanity",
+  "version": "1.0.0",
+  "description": "Running through Docker's [\"Redux Without Profanity\"](https://tonyhb.gitbooks.io/redux-without-profanity) tutorial on Redux, normalizr, reselect, and Immutable.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha  --compilers js:babel/register --recursive --require ./test.setup.js src/scripts/**/_tests/",
+    "start": "ENV=development node dev.server.js",
+    "watch": "ENV=development ./node_modules/.bin/webpack --progress -wcv --config ./webpack.config.dev.js",
+    "build": "ENV=production ./node_modules/.bin/webpack --progress -cv --config ./webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "history": "^2.1.0",
+    "immutable": "^3.8.1",
+    "lodash": "^4.11.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.3.0",
+    "redux": "^3.5.2",
+    "redux-simple-router": "^2.0.4",
+    "reselect": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.0.3",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-runtime": "^6.6.1",
+    "chai": "^3.5.0",
+    "eslint": "^2.8.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jsdom": "^8.4.0",
+    "mocha": "^2.4.5",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
